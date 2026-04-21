@@ -3,23 +3,23 @@ import { HighlightedText } from "./HighlightedText"
 
 const philosophyItems = [
   {
-    title: "Минимализм со смыслом",
+    title: "Точность в реальном времени",
     description:
-      "Каждый элемент имеет свое назначение и пространство для дыхания. Мы убираем лишнее, чтобы раскрыть то, что действительно важно.",
+      "GPS/ГЛОНАСС трекинг с обновлением раз в секунду. Знайте, где каждая машина прямо сейчас — без задержек и белых пятен на карте.",
   },
   {
-    title: "Архитектурный подход",
+    title: "Интеграция с 1С",
     description:
-      "Планировки, вдохновленные структурой, ритмом и материальностью. Здания, которые говорят через пропорции и свет.",
+      "Путевые листы формируются автоматически на основе данных о маршруте. Никакой ручной работы: данные из системы мониторинга сразу попадают в 1С.",
   },
   {
-    title: "Естественная динамика",
+    title: "Контроль топлива",
     description:
-      "Движение поддерживает восприятие, но никогда не отвлекает. Анимация, которая ощущается естественно, как свет, скользящий по комнате.",
+      "Датчики уровня топлива фиксируют каждый слив и заправку. Экономия до 20% расходов на ГСМ уже в первый месяц работы.",
   },
   {
-    title: "Вневременная эстетика",
-    description: "Элегантный, спокойный и долговечный визуальный язык. Дизайн, который превосходит тренды и стареет с достоинством.",
+    title: "Агромониторинг полей",
+    description: "Отслеживание техники на полях, контроль обработанных площадей и производительности агрегатов. Полная картина уборочной кампании.",
   },
 ]
 
@@ -51,28 +51,26 @@ export function Philosophy() {
     <section id="about" className="py-32 md:py-29">
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
-          {/* Left column - Title and image */}
           <div className="lg:sticky lg:top-32 lg:self-start">
-            <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наша философия</p>
+            <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">О системе</p>
             <h2 className="text-6xl md:text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-              Дизайн с
+              Мониторинг с
               <br />
-              <HighlightedText>намерением</HighlightedText>
+              <HighlightedText>результатом</HighlightedText>
             </h2>
 
             <div className="relative hidden lg:block">
               <img
                 src="/images/exterior.png"
-                alt="Архитектурный эскиз рабочего пространства"
+                alt="Панель управления мониторингом"
                 className="opacity-90 relative z-10 w-auto"
               />
             </div>
           </div>
 
-          {/* Right column - Description and Philosophy items */}
           <div className="space-y-6 lg:pt-48">
             <p className="text-muted-foreground text-lg leading-relaxed max-w-md mb-12">
-              Архитектура - это больше, чем конструкция. Это то, как мы воспринимаем мир. Мы создаем пространства, которые питают человеческий дух.
+              Спутниковый мониторинг — это не просто карта с точками. Это инструмент управления, который снижает расходы, исключает приписки и даёт полный контроль над автопарком и техникой.
             </p>
 
             {philosophyItems.map((item, index) => (
