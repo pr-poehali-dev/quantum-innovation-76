@@ -5,7 +5,7 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-2">
             <a href="/" className="inline-block mb-6">
-              <img src="/images/hously-logo.svg" alt="СпутникМониторинг" width={120} height={32} className="w-auto h-6" />
+              <img src="https://cdn.poehali.dev/files/a09fa351-2c39-41db-8c2e-7720c5608704.png" alt="АвтоСвязьСервис" className="w-auto h-10" />
             </a>
             <p className="text-muted-foreground leading-relaxed max-w-sm">
               Спутниковый мониторинг транспорта и техники. GPS/ГЛОНАСС, датчики топлива, интеграция с 1С, агромониторинг полей.
